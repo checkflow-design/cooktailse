@@ -1,0 +1,5 @@
+class RemoveDoseIdFromIngredient < ActiveRecord::Migration[6.0]
+  def change
+    remove_reference :ingredients, :dose
+  end
+end

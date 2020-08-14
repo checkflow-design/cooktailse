@@ -1,0 +1,6 @@
+<div class="container p-2 mb-2">
+  <h2><%= @cocktail.name %></h2>
+  <br>
+  <%= link_to 'Go back to cocktails', cocktails_path  %>
+  <%= link_to 'Create a dose', new_cocktail_dose_path(@cocktail) %>
+</div>

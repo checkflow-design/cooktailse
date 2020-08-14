@@ -1,0 +1,8 @@
+<div class="container mb-2">
+  <%= simple_form_for [ @cocktail ] do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Submit cocktail", class: "btn btn-primary" %>
+  <% end %>
+  <br>
+  <%= link_to 'Go back to cocktails', cocktails_path  %>
+</div>
